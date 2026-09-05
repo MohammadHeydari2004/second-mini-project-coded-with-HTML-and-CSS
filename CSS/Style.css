@@ -257,7 +257,7 @@ h3 {
 
 body {
   min-height: 100vh;
-  background-color: var(--color-background);
+  background-color: var(--color-secondary-light);
 }
 
 /* *************** Header ******************** */
@@ -333,17 +333,18 @@ header {
 /* ***************************** */
 
 .link_info_container {
+  position: sticky;
+  bottom: var(--space-8);
   height: var(--space-12);
   width: var(--space-28);
   right: var(--space-4);
-  bottom: var(--space-4);
-  position: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
   border: var(--border-width-thick) solid var(--color-text-light);
   border-radius: var(--radius-full);
   z-index: var(--z-floating);
+  transition: bottom var(--transition-normal);
 }
 
 .link_info {
